@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BattleTechModParser
@@ -16,8 +13,6 @@ namespace BattleTechModParser
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            ParserTest.enable();
-            ParserTest.disable();
             Application.Run(new Form1());
         }
     }
