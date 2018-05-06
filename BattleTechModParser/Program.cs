@@ -18,7 +18,6 @@ namespace BattleTechModParser
             Application.SetCompatibleTextRenderingDefault(false);
             ParserTest.enable();
             ParserTest.disable();
-            //Parser.PatchFile(@"C:\Users\Yoni\Downloads\VersionManifest.csv", false);
             Application.Run(new Form1());
         }
     }

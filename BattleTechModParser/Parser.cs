@@ -22,11 +22,11 @@ namespace BattleTechModParser
         public static void PatchFile(string filename, bool enable)
         {
             var fileContents = System.IO.File.ReadAllLines(filename);
-            var newFileContents = GetFileChanges(fileContents, enable);
+            var newFileContents = GetFileChanges(fileContents.ToList(), enable);
             System.IO.File.WriteAllLines(filename, newFileContents.ToArray());
         }
 
-        public static List<string> GetFileChanges(string[] fileContents, bool enable)
+        public static List<string> GetFileChanges(List<string> fileContents, bool enable)
         {
             var newFileContents = new List<string>();
             string section = null;
@@ -36,7 +36,13 @@ namespace BattleTechModParser
                 {
                     if (section != null && Sections.ContainsKey(section) && enable)
                     {
-                        newFileContents.AddRange(Sections[section]);
+                        foreach (var sectionLine in Sections[section])
+                        {
+                            if (!fileContents.Contains(sectionLine))
+                            {
+                                newFileContents.Add(sectionLine);
+                            }
+                        }
                     }
                     section = null;
                 }
