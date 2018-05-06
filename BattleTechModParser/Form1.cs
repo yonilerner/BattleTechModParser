@@ -26,7 +26,6 @@ namespace BattleTechModParser
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                var file = dialog.OpenFile();
                 this.file_input.Text = dialog.FileName;
             }
         }

@@ -22,12 +22,18 @@ namespace BattleTechModParser
         public static void enable()
         {
             var newContents = Parser.GetFileChanges(OrigContents, true);
+            newContents = Parser.GetFileChanges(newContents.ToArray(), true);
+            newContents = Parser.GetFileChanges(newContents.ToArray(), true);
+            newContents = Parser.GetFileChanges(newContents.ToArray(), true);
             CollectionAssert.AreEqual(newContents.ToArray(), ModdedContents);
         }
 
         public static void disable()
         {
             var newContents = Parser.GetFileChanges(ModdedContents, false);
+            newContents = Parser.GetFileChanges(ModdedContents, false);
+            newContents = Parser.GetFileChanges(ModdedContents, false);
+            newContents = Parser.GetFileChanges(ModdedContents, false);
             CollectionAssert.AreEqual(newContents.ToArray(), OrigContents);
         }
     }
