@@ -1,0 +1,2 @@
+﻿envTxrHrld_GoldenFoxes,Sprite,mods/Golden Foxes/emblems/player/envTxrHrld_GoldenFoxes.dds,0,2018-05-03T08:58:16.3696550Z,2018-05-03T08:58:16.3696550Z,,,False,0,False
+envTxrHrld_GoldenFoxes,Texture2D,mods/Golden Foxes/emblems/player/envTxrHrld_GoldenFoxes.dds,0,2018-05-03T08:58:16.3696550Z,2018-05-03T08:58:16.3696550Z,,,False,0,False
