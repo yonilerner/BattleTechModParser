@@ -33,6 +33,7 @@
             this.select_file = new System.Windows.Forms.Button();
             this.patch_button = new System.Windows.Forms.Button();
             this.unpatch_button = new System.Windows.Forms.Button();
+            this.use_default_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // file_input
@@ -41,6 +42,7 @@
             this.file_input.Name = "file_input";
             this.file_input.Size = new System.Drawing.Size(357, 20);
             this.file_input.TabIndex = 1;
+            this.file_input.TextChanged += new System.EventHandler(this.file_input_TextChanged);
             // 
             // label1
             // 
@@ -81,11 +83,22 @@
             this.unpatch_button.UseVisualStyleBackColor = true;
             this.unpatch_button.Click += new System.EventHandler(this.unpatch_button_Click);
             // 
+            // use_default_button
+            // 
+            this.use_default_button.Location = new System.Drawing.Point(438, 69);
+            this.use_default_button.Name = "use_default_button";
+            this.use_default_button.Size = new System.Drawing.Size(75, 23);
+            this.use_default_button.TabIndex = 6;
+            this.use_default_button.Text = "Use Default";
+            this.use_default_button.UseVisualStyleBackColor = true;
+            this.use_default_button.Click += new System.EventHandler(this.use_default_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 365);
+            this.Controls.Add(this.use_default_button);
             this.Controls.Add(this.unpatch_button);
             this.Controls.Add(this.patch_button);
             this.Controls.Add(this.select_file);
@@ -104,6 +117,7 @@
         private System.Windows.Forms.Button select_file;
         private System.Windows.Forms.Button patch_button;
         private System.Windows.Forms.Button unpatch_button;
+        private System.Windows.Forms.Button use_default_button;
     }
 }
 

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace BattleTechModParser
 {
     public partial class Form1 : Form
     {
+        private static string ManifestLocationSetting = "ManifestLocation";
         public Form1()
         {
             InitializeComponent();
@@ -18,6 +20,23 @@ namespace BattleTechModParser
             {
                 MessageBox.Show("There is a problem with the patcher!");
                 Environment.Exit(1);
+            }
+            if (Properties.Settings.Default[ManifestLocationSetting] != null)
+            {
+                this.file_input.Text = (string) Properties.Settings.Default[ManifestLocationSetting];
+            }
+            else
+            {
+                use_default();
+            }
+        }
+
+        private void use_default()
+        {
+            var defaultFileGuess = Utils.GetBestFileGuess();
+            if (defaultFileGuess != null)
+            {
+                this.file_input.Text = defaultFileGuess;
             }
         }
 
@@ -60,6 +79,22 @@ namespace BattleTechModParser
         private void unpatch_button_Click(object sender, EventArgs e)
         {
             patch_button_handler(false);
+        }
+
+        private void file_input_TextChanged(object sender, EventArgs e)
+        {
+            update_settings();
+        }
+
+        private void update_settings()
+        {
+            Properties.Settings.Default[ManifestLocationSetting] = this.file_input.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void use_default_button_Click(object sender, EventArgs e)
+        {
+            use_default();
         }
     }
 }

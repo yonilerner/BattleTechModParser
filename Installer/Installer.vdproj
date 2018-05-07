@@ -187,15 +187,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FOXBattletechModPatcher"
-        "ProductCode" = "8:{C1FB9C51-EFD9-4FAE-AA92-FDB4B1777296}"
-        "PackageCode" = "8:{E5A4E97E-1ED0-43B4-B903-34A550683EA6}"
+        "ProductCode" = "8:{1EB6E009-9CEA-4745-BCC7-6DA8456C29DD}"
+        "PackageCode" = "8:{E0A03164-19AE-4BA1-9FA6-DB6BF08ABC8B}"
         "UpgradeCode" = "8:{FE12A076-0EE0-4B59-BBBB-0D86EB68CA8B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Default Company Name"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -765,7 +765,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DDDA3CBBD2FF4EEAAF808A8B7D615BC4"
             {
-            "SourcePath" = "8:..\\BattleTechModParser\\obj\\Release\\BattleTechModParser.exe"
+            "SourcePath" = "8:..\\BattleTechModParser\\obj\\Debug\\BattleTechModParser.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_98FD52E6AF584C37B845ACC3537A531C"
