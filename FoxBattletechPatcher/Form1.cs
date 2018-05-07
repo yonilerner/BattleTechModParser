@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace BattleTechModParser
+namespace FoxBattletechPatcher
 {
     public partial class Form1 : Form
     {

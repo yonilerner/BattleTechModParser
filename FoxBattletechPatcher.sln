@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleTechModParser", "BattleTechModParser\BattleTechModParser.csproj", "{A7EB1B16-AF5A-4E28-978A-89A6F0A145C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxBattletechPatcher", "FoxBattletechPatcher\FoxBattletechPatcher.csproj", "{A7EB1B16-AF5A-4E28-978A-89A6F0A145C3}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{04936C2E-94AC-4E11-B077-AFDE66E1AB2A}"
 EndProject

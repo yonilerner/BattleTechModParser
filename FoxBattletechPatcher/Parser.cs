@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace BattleTechModParser
+namespace FoxBattletechPatcher
 {
     internal static class Parser
     {

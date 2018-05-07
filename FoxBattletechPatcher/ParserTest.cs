@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace BattleTechModParser
+namespace FoxBattletechPatcher
 {
     public class ParserTest
     {

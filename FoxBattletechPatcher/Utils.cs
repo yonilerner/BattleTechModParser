@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BattleTechModParser
+namespace FoxBattletechPatcher
 {
     class Utils
     {

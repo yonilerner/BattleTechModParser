@@ -1,4 +1,4 @@
-﻿namespace BattleTechModParser
+﻿namespace FoxBattletechPatcher
 {
     partial class Form1
     {
@@ -105,7 +105,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.file_input);
             this.Name = "Form1";
-            this.Text = "FOX Mod Applier";
+            this.Text = "[FOX] Battletech Patcher";
             this.ResumeLayout(false);
             this.PerformLayout();
 
