@@ -5,10 +5,9 @@ namespace BattleTechModParser
 {
     class Utils
     {
-        public static string ManifestFileName = "VersionManifest.csv";
         public static string GetSteamFolder(string prefix)
         {
-            return prefix + @"\Steam\SteamApps\common\BATTLETECH\BattleTech_Data\StreamingAssets\data\";
+            return prefix + @"\Steam\SteamApps\common\BATTLETECH\BattleTech_Data\StreamingAssets\data\VersionManifest.csv";
         }
         public static List<string> GetDefaultLocations()
         {
@@ -23,7 +22,7 @@ namespace BattleTechModParser
         {
             foreach (var location in locations)
             {
-                if (System.IO.File.Exists(location + ManifestFileName))
+                if (System.IO.File.Exists(location))
                 {
                     return location;
                 }

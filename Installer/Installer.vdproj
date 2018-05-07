@@ -188,7 +188,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FOXBattletechModPatcher"
         "ProductCode" = "8:{1EB6E009-9CEA-4745-BCC7-6DA8456C29DD}"
-        "PackageCode" = "8:{E0A03164-19AE-4BA1-9FA6-DB6BF08ABC8B}"
+        "PackageCode" = "8:{44D71DB8-8955-4189-8C88-BB0AD4754CD1}"
         "UpgradeCode" = "8:{FE12A076-0EE0-4B59-BBBB-0D86EB68CA8B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -308,6 +308,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2947E6E064E049048CC559E4AA4F6DC3"
+            {
+            "Name" = "8:FOXBattletechModPatcher"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_DDDA3CBBD2FF4EEAAF808A8B7D615BC4"
+            "Folder" = "8:_C263AFA6A455448195288959E403A595"
+            "WorkingFolder" = "8:_98FD52E6AF584C37B845ACC3537A531C"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -765,7 +779,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DDDA3CBBD2FF4EEAAF808A8B7D615BC4"
             {
-            "SourcePath" = "8:..\\BattleTechModParser\\obj\\Debug\\BattleTechModParser.exe"
+            "SourcePath" = "8:..\\BattleTechModParser\\obj\\Release\\BattleTechModParser.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_98FD52E6AF584C37B845ACC3537A531C"

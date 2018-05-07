@@ -44,7 +44,7 @@ namespace BattleTechModParser
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = "CSV Files|*.csv";
-            dialog.Title = "Select a VersionManifest File";
+            dialog.Title = "Select a Manifest File";
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
